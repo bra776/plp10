@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ Site Title }} — Descriptive Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ Short description of this page }}" />
+</head>
+<body>
+  <header>
+    <h1>INFOTECH TECHNOLOGIES</h1>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form role="search" aria-label="Site search">
+      <label for="q">Search:</label>
+      <input id="q" name="q" type="search" placeholder="Search the site…" />
+      <button type="submit">Go</button>
+    </form>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">computers system </h2>
+      <p>In this webpage you learn about things to consider before and when buying a computer. </p>
+
+      <figure>
+        <img src="C:\Users\HP\Downloads" alt="the specification of a computer system" width="800" height="400" />
+        <figcaption>when buying you  consider te following:
+            <ul>
+                <li>Budget</li>
+                <li>Purpose</li>
+                <li>Specifications</li>
+                <li>Brand</li>
+                <li>Warranty and Support</li>
+            </ul>
+
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="features" ariPurpose & Use Case a-labelledby="features-title"></section>
+      <h2 id="features-title">Key Features</h2>
+      <ul>
+        <li> <h2>Purpose & Use Case</h2>
+            <h3>Define what you need the computer for:</h3>
+            <ul>
+              <li>General use: web browsing, office applications, media consumption</li>
+              <li>Gaming: high-performance graphics, fast processors</li>
+              <li>Professional work: video editing, programming, graphic design</li>
+              <li>your primary use case helps in selecting the right specifications.</li>
+              <li>Consider the type of software you will be using and its system requirements.</li> 
+            </ul>
+        </li>
+        <li> <h2>specifications</h2>
+           <li>
+             <h3>Processor (CPU)</h3>
+            <ul>
+            <li>The CPU is the brain of the computer, affecting speed and multitasking capabilities.</li>
+            <li>Look for core count and clock speed (e.g., Intel i5/i7, AMD Ryzen 5/7).</li>
+            <li>For gaming or heavy tasks, consider higher-end CPUs.</li>
+            <li>The “brain” of the computer — affects speed and multitasking</li>
+
+            <li>consider using an ssd storage than hard disk drive (HDD) for faster performance.</li>
+            <li>Look for at least 8GB of RAM for general use, 16GB or more for gaming or professional work.</li>
+            </ul>
+          </li>
+        <li>
+            <h3>Memory (RAM)</h3>
+            <ul>
+              <li>RAM affects how many applications you can run simultaneously.</li>
+              <li>8GB is standard for general use; 16GB or more is better for gaming or professional tasks.</li>
+                <li>More RAM allows for smoother multitasking and better performance in demanding applications.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Storage</h3>
+            <ul>
+              <li>Choose between SSD (faster, more expensive) and HDD (slower, cheaper).</li>
+              <li>Consider at least 256GB SSD or 1TB HDD for general use.</li>
+              <li>For gaming or large files, look for larger SSDs or a combination of SSD and HDD.</li>
+                <li>SSD (Solid State Drive) is faster and more reliable than HDD (Hard Disk Drive).</li>
+            </ul>
+        </li>
+      </ul>
+
+      <aside aria-label="Quick note">
+        <p> <h3><i>NOTE</i></h3></p>
+        <p>When buying a computer, consider the following:</p>
+        <ul>
+          
+          <li><mark>Budget: Set a budget that fits your needs.</mark></li>
+          <li><mark> Research brands for reliability and support.</mark></li>
+          <li><mark>Warranty: Check warranty terms and customer support options.</mark></li>
+          <li><mark> Read reviews to gauge performance and reliability.</mark></li>  
+        </ul>
+      </aside>
+    </section>
+
+    
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Us</h2>
+
+      <form id="contactForm" method="post" action="{{ /submit }}" novalidate>
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <label for="name">Full Name</label><br />
+          <input id="name" name="name" type="text" required
+                 placeholder="e.g., Brian Mwangi" autocomplete="name" /><br /><br />
+
+          <label for="email">Email</label><br />
+          <input id="email" name="email" type="email" required
+                 placeholder="you@example.com" autocomplete="email" /><br /><br />
+
+          <label for="phone">Phone</label><br />
+          <input id="phone" name="phone" type="tel"
+                 placeholder="+2547XXXXXXXX" inputmode="tel" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Message</legend>
+
+          <label for="subject">Subject</label><br />
+          <input id="subject" name="subject" type="text" required
+                 placeholder="What is this about?" /><br /><br />
+
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="6" required
+                    placeholder="Write your message here…"></textarea><br /><br />
+
+          <label for="topic">Topic</label><br />
+          <select id="topic" name="topic" required>
+            <option value=""></option>
+        
+        
+            <option value="Purpose & use case">Purpose & use case</option>
+            <option value="specification">specification</option>
+            <option value="memory (RAM)">memory (RAM)</option>
+            <option value="storage">storage</option>
+          </select><br /><br />
+
+         
+        </fieldset>
+ 
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+      </form>
+
+      <address>
+    
+        <a href="mailto:{{ info@example.com }}">brianmwanginjeri20@gmail.com</a>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <i>
+    <small>&copy; <time datetime="2025">2025</time> infotech technologies. All rights reserved.</small>
+    </i>
+  </footer>
+</body>
+</html>
