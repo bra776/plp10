@@ -1,0 +1,199 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-display: swap;
+  line-height: 1.6;
+  color: #0eb65d;
+  background-color: #0f4bc4;
+  padding: 0 1rem;
+}
+
+h1, h2, h3, h4 {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background: #0a3d62;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #f1c40f;
+}
+
+
+form[role="search"] {
+  margin-top: 0.5rem;
+}
+
+form[role="search"] input {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form[role="search"] button {
+  padding: 0.4rem 0.8rem;
+  margin-left: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  background: #f1c40f;
+  cursor: pointer;
+}
+
+form[role="search"] button:hover {
+  background: #e1b200;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #96d857;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: left;
+}
+
+
+aside {
+  background: #beee71;
+  border-left: 4px solid #f1c40f;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+
+form {
+  margin-top: 1rem;
+}
+
+fieldset {
+  margin-bottom: 1.5rem;
+  border: 1px solid #cdef5f;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #cfcf0f;
+  border-radius: 6px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 0.6rem 1.2rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  background: #0a3d62;
+  color: #09c2bf;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #075082;
+}
+
+button[type="reset"] {
+  background: #777;
+}
+
+button[type="reset"]:hover {
+  background: #555;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #f6f7f8;
+  color: #088717ac;
+  border-radius: 10px 10px 0 0;
+  font-size: 0.9rem;
+}
